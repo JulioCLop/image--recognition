@@ -3,15 +3,15 @@ import React from 'react';
 
 
 
-
-const Rank = () => {
+function  Rank({name,entries}){
+    console.log( name);
     return (
         <div>
           <div className='white f3'>
-              {'Julio, your current rank is....'}
+              {`${name}, your current entry count...`}
           </div>
           <div className='white f1'>
-              {'#5'}
+              {entries}
           </div>
         </div>
     )
